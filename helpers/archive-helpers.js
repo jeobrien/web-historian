@@ -23,9 +23,6 @@ exports.initialize = function(pathsObj) {
   });
 };
 
-// The following function names are provided to you to suggest how you might
-// modularize your code. Keep it clean!
-
 exports.readListOfUrls = function(callback) {
   fs.readFile(exports.paths.list, "utf-8", function(err, data) {
     var list = data.split('\n');
