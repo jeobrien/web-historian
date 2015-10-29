@@ -61,7 +61,7 @@ describe("server", function() {
 
         request
           .post("/")
-          .type('form')
+          .type('json')
           .send({ url: url })
           .expect(302, function (err) {
             if (!err) {
@@ -82,7 +82,7 @@ describe("archive helpers", function(){
       var urlArray = ["example1.com", "example2.com"];
       fs.writeFileSync(archive.paths.list, urlArray.join("\n"));
 
-      archive.readListOfUrls(function(urls){
+      archive.readListOfUrls(function(err, urls){
         expect(urls).to.deep.equal(urlArray);
         done();
       });

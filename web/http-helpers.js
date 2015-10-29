@@ -14,10 +14,25 @@ exports.serveAssets = function(res, asset, callback) {
   // Write some code here that helps serve up your static files!
   // (Static files are things like html (yours or archived from others...),
   // css, or anything that doesn't change often.)
+  res.writeHead(headers);
+  fs.readFile(asset, "utf-8",function(err, data) {
+    if (err) {
+      callback(res);
+    } else {
+      res.writeHead(200);
+      res.end(data);
+    }
+  });
 };
 
-  // Write some code here that helps serve up your static files!
-  // (Static files are things like html (yours or archived from others...),
-  // css, or anything that doesn't change often.)
-
+exports.collectData = function(req, res, callback) {
+  var data = "";
+  req.on('data', function (chunk) {
+    data += chunk;
+  });
+  req.on('end', function() { 
+    callback(res, JSON.parse(data).url);
+  });
+}
+ 
 // As you progress, keep thinking about what helper functions you can put here!
