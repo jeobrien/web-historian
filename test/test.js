@@ -61,7 +61,7 @@ describe("server", function() {
 
         request
           .post("/")
-          .type('json')
+          .type('form')
           .send({ url: url })
           .expect(302, function (err) {
             if (!err) {

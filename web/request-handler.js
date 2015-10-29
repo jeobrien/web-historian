@@ -14,17 +14,20 @@ exports.handleRequest = function (req, res) {
     if (action) {
       action(res, archive.paths.siteAssets + "/index.html");
     }
-  }
-  else if (req.method === "GET") {
-    archive.isUrlArchived(req.url, function (statusCode, data) {
-        res.writeHead(statusCode);
-        if (data) {
-          res.end(data);
-        } else {
-          res.end();          
-        }
-      // })
-    });
+  } else if (req.method === "GET") {
+    if (req.url === '/triggerDownload') {
+      archive.getUrls();
+      res.end()
+    } else {
+      archive.isUrlArchived(req.url, function (statusCode, data) {
+          res.writeHead(statusCode);
+          if (data) {
+            res.end(data);
+          } else {
+            res.end();          
+          }
+      });
+    }
 
   }
   if (req.method === "POST") {

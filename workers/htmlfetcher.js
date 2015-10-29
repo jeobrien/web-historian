@@ -4,28 +4,22 @@ var fs = require('fs');
 var http = require('http');
 var archive = require('../helpers/archive-helpers');
 var path = require('path');
+var httpRequest = require ('http-request');
 
 exports.paths = {
   archivedSites: path.join(__dirname, '../archives/sites'),
 };
 
 exports.fetch = function(url) {
-  console.log(archive.paths.archivedSites + url)
-  var file = fs.createWriteStream(archive.paths.archivedSites + "/" + url);
-  console.log(__dirname)
-  var request = http.get('http://' + url, function(response, err) {
-    response.pipe(file);
-    file.on('finish', function() {
-      file.close();
-    })
+
+  var request = httpRequest.createHttpClient({
+    url: 'http://' + url,
+    method: "GET"
+  })
+  request.send(function() {
+    request.saveFile(archive.paths.archivedSites + "/" + url, function() {
+      console.log("saved");
+    }) 
   });
-  request.end();
+
 }
-
-exports.init = function() {
-  archive.getUrls();
-};
-
-// init();
-
-// exports.fetch();

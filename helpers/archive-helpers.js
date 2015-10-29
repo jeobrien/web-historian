@@ -25,6 +25,7 @@ exports.initialize = function(pathsObj) {
 };
 
 exports.readListOfUrls = function(callback) {
+  console.log("reading");
   fs.readFile(exports.paths.list, "utf-8", function(err, data) {
     var list = data.split('\n');
     callback(list);
@@ -32,6 +33,7 @@ exports.readListOfUrls = function(callback) {
 };
 
 exports.isUrlInList = function(url, callback) {
+  console.log("checking in list")
   exports.readListOfUrls(function(list) {
     if (list.indexOf(url) === -1) {
       exports.addUrlToList(url, callback);
@@ -43,16 +45,21 @@ exports.isUrlInList = function(url, callback) {
 
 exports.addUrlToList = function(url, callback) {
   fs.appendFile(exports.paths.list, url + "\n", function() {
-    callback(302)
+    fs.readFile(exports.paths.siteAssets + "/loading.html", function(err, data) {
+      callback(302, data);
+    })
     //serve, we're working on it
   });
 };
 
 exports.isUrlArchived = function(url, callback) {
-  fs.readFile(exports.paths.archivedSites + url, function(err, data){
+  console.log("checking in archive")
+  fs.readFile(exports.paths.archivedSites + "/" + url, function(err, data){
     if (err) {
+      console.log("didn't find")
       callback(404);
     } else {
+      console.log("found it")
       callback(200, data);
     }
   });

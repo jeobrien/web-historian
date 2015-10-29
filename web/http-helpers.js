@@ -31,8 +31,10 @@ exports.collectData = function(req, res, callback) {
     data += chunk;
   });
   req.on('end', function() { 
-    console.log(res.end, "END");
-    callback(JSON.parse(data).url, function(statusCode, data) {
+    console.log(data, "DATA");
+    var parts = data.split('=')
+    console.log(parts);
+    callback(parts[1], function(statusCode, data) {
         res.writeHead(statusCode);
         if (data) {
           res.end(data);
