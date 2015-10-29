@@ -1,0 +1,5205 @@
+Last login: Thu Oct 29 09:57:14 on ttys001
+Hack Reactor
+
+~/D/2015-10-web-historian git:master ❯❯❯ ls
+archives     node_modules test         workers
+helpers      package.json web
+~/D/2015-10-web-historian git:master ❯❯❯ npm test
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (94ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+
+
+  8 passing (169ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                               ⏎
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (47ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (114ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+
+
+  8 passing (102ms)
+  9 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (103ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (49ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+
+
+  8 passing (113ms)
+  9 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (52ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+
+
+  8 passing (113ms)
+  9 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (47ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+
+
+  8 passing (123ms)
+  9 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (38ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+
+
+  8 passing (116ms)
+  9 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (48ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (105ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught ReferenceError: website is not defined
+      at Object.exports.fetch (/Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:8:65)
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:66:21
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught ReferenceError: website is not defined
+      at Object.exports.fetch (/Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:8:65)
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:66:21
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught ReferenceError: website is not defined
+      at Object.exports.fetch (/Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:8:65)
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:66:21
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html 
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+      10) should download all pending urls in the list
+      11) should download all pending urls in the list
+      12) should download all pending urls in the list
+
+
+  8 passing (100ms)
+  12 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  10) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  11) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  12) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample2.com/file.txt
+      2) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitessomeurl.com/file.txt
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+      10) should download all pending urls in the list
+    11) should download all pending urls in the list
+    12) should download all pending urls in the list
+
+
+  8 passing (122ms)
+  12 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  10) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  11) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  12) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (46ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample2.com/file.txt
+      2) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitessomeurl.com/file.txt
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+
+
+  8 passing (103ms)
+  4 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: ENOENT, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt'
+      at Error (native)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: ENOENT, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt'
+      at Error (native)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: ENOENT, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt'
+      at Error (native)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: ENOENT, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt'
+      at Error (native)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (44ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (98ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: undefined is not a function
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:66:21
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: undefined is not a function
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:66:21
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: undefined is not a function
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:66:21
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html 
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (92ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                             ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (47ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (95ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (46ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample2.com/file.txt
+      2) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/sitessomeurl.com/file.txt
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+      7) should download all pending urls in the list
+      8) should download all pending urls in the list
+      9) should download all pending urls in the list
+      10) should download all pending urls in the list
+      11) should download all pending urls in the list
+      12) should download all pending urls in the list
+
+
+  8 passing (107ms)
+  12 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  7) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  8) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  9) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  10) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  11) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  12) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (42ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (98ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (47ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (99ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (96ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (50ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (100ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+
+
+  8 passing (102ms)
+  3 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Bad argument
+      at TypeError (native)
+      at Object.fs.close (fs.js:467:11)
+      at Object.close (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:102:17)
+      at /Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:9:8
+      at OpenReq.Req.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:143:5)
+      at OpenReq.done (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/node_modules/glob/node_modules/graceful-fs/graceful-fs.js:63:22)
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (47ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+undefined
+undefined
+undefined
+      1) should download all pending urls in the list
+
+
+  8 passing (125ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+{ [Error: ENOENT, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt']
+  errno: -2,
+  code: 'ENOENT',
+  path: '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample1.com/file.txt' } undefined
+{ [Error: ENOENT, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample2.com/file.txt']
+  errno: -2,
+  code: 'ENOENT',
+  path: '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitesexample2.com/file.txt' } undefined
+{ [Error: ENOENT, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitessomeurl.com/file.txt']
+  errno: -2,
+  code: 'ENOENT',
+  path: '/Users/student/Desktop/2015-10-web-historian/test/testdata/sitessomeurl.com/file.txt' } undefined
+      1) should download all pending urls in the list
+
+
+  8 passing (122ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (49ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+null 21
+null 22
+null 23
+      1) should download all pending urls in the list
+
+
+  8 passing (131ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'file.txt', 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+      -  "file.txt"
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+null 21 undefined
+null 22 undefined
+null 23 undefined
+      1) should download all pending urls in the list
+
+
+  8 passing (151ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'file.txt', 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+      -  "file.txt"
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+null 21 undefined
+null 22 undefined
+      1) should download all pending urls in the list
+
+
+  8 passing (129ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'file.txt', 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+      -  "file.txt"
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+{ [Error: EISDIR, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sites']
+  errno: -21,
+  code: 'EISDIR',
+  path: '/Users/student/Desktop/2015-10-web-historian/test/testdata/sites' } undefined undefined
+{ [Error: EISDIR, open '/Users/student/Desktop/2015-10-web-historian/test/testdata/sites']
+  errno: -21,
+  code: 'EISDIR',
+  path: '/Users/student/Desktop/2015-10-web-historian/test/testdata/sites' } undefined undefined
+      1) should download all pending urls in the list
+
+
+  8 passing (129ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'file.txt', 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+      -  "file.txt"
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ⏎ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+null 21 undefined
+null 22 undefined
+      1) should download all pending urls in the list
+
+
+  8 passing (120ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'file.txt', 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+      -  "file.txt"
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✱ ◼
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (38ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+
+
+  8 passing (127ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'file.txt', 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+      -  "file.txt"
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✱ ◼
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+/Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:8
+  siteAssets: path.join(__dirname, '../web/public'),
+              ^
+ReferenceError: path is not defined
+    at Object.<anonymous> (/Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:8:15)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Object.<anonymous> (/Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:5:17)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Object.<anonymous> (/Users/student/Desktop/2015-10-web-historian/web/request-handler.js:2:15)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Object.<anonymous> (/Users/student/Desktop/2015-10-web-historian/web/basic-server.js:2:15)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at Object.<anonymous> (/Users/student/Desktop/2015-10-web-historian/test/test.js:2:14)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Module.require (module.js:365:17)
+    at require (module.js:384:17)
+    at /Users/student/Desktop/2015-10-web-historian/node_modules/mocha/lib/mocha.js:184:27
+    at Array.forEach (native)
+    at Mocha.loadFiles (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/lib/mocha.js:181:14)
+    at Mocha.run (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/lib/mocha.js:393:31)
+    at Object.<anonymous> (/Users/student/Desktop/2015-10-web-historian/node_modules/mocha/bin/_mocha:380:16)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                     ⏎ ✖ ✱ ◼
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+
+
+  8 passing (122ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'file.txt', 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+      -  "file.txt"
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                     ⏎ ✖ ✱ ◼
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html 
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+
+
+  8 passing (118ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                     ⏎ ✖ ✱ ◼
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (48ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+null 21 undefined
+null 22 undefined
+      1) should download all pending urls in the list
+
+
+  8 passing (132ms)
+  1 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+
+      Uncaught AssertionError: expected [ 'www.example.com' ] to deeply equal [ 'www.example.com', 'www.google.com' ]
+      + expected - actual
+
+       [
+         "www.example.com"
+      +  "www.google.com"
+       ]
+      
+      at Assertion.assertEqual (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/core/assertions.js:427:19)
+      at Assertion.ctx.(anonymous function) [as equal] (/Users/student/Desktop/2015-10-web-historian/node_modules/chai/lib/chai/utils/addMethod.js:40:25)
+      at null._onTimeout (/Users/student/Desktop/2015-10-web-historian/test/test.js:152:69)
+      at Timer.listOnTimeout (timers.js:110:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                     ⏎ ✖ ✱ ◼
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+null 21 undefined
+null 22 undefined
+      ✓ should download all pending urls in the list 
+
+
+  9 passing (134ms)
+
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (42ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+null 21 undefined
+null 22 undefined
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+    4) should download all pending urls in the list
+    5) should download all pending urls in the list
+
+  6) should download all pending urls in the list
+
+  8 passing (105ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (104ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (43ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (119ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (115ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' (73ms)
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list (102ms)
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      ✓ should download all pending urls in the list 
+
+
+  9 passing (296ms)
+
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (45ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (114ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (42ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (108ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (49ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (114ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (38ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (108ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (108ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (102ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+    5) should download all pending urls in the list
+    6) should download all pending urls in the list
+
+
+  8 passing (107ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (105ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+    5) should download all pending urls in the list
+    6) should download all pending urls in the list
+
+
+  8 passing (105ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (106ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (42ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+      5) should download all pending urls in the list
+      6) should download all pending urls in the list
+
+
+  8 passing (118ms)
+  6 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  5) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  6) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (47ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+
+
+  8 passing (111ms)
+  4 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+
+
+  8 passing (103ms)
+  4 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (39ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+
+
+  8 passing (103ms)
+  4 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+
+
+  8 passing (106ms)
+  4 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (41ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+      3) should download all pending urls in the list
+      4) should download all pending urls in the list
+
+
+  8 passing (104ms)
+  4 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  3) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+  4) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: socket hang up
+      at createHangUpError (_http_client.js:215:15)
+      at Socket.socketCloseListener (_http_client.js:247:23)
+      at Socket.emit (events.js:129:20)
+      at TCP.close (net.js:476:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (48ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+{ _readableState: 
+   { objectMode: false,
+     highWaterMark: 16384,
+     buffer: [],
+     length: 0,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: false,
+     endEmitted: false,
+     reading: false,
+     sync: true,
+     needReadable: false,
+     emittedReadable: false,
+     readableListening: false,
+     defaultEncoding: 'utf8',
+     ranOut: false,
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function: responseOnEnd] },
+  _maxListeners: undefined,
+  socket: 
+   { _connecting: false,
+     _hadError: false,
+     _handle: 
+      { fd: 22,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _host: 'www.example.com',
+     _readableState: 
+      { objectMode: false,
+        highWaterMark: 16384,
+        buffer: [],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: false,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null,
+        resumeScheduled: false },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        free: [Function: onFree],
+        close: [Object],
+        agentRemove: [Function: onRemove],
+        drain: [Function: ondrain],
+        error: [Function: socketErrorListener],
+        data: [Function: socketOnData] },
+     _maxListeners: undefined,
+     _writableState: 
+      { objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false },
+     writable: true,
+     allowHalfOpen: false,
+     destroyed: false,
+     bytesRead: 1610,
+     _bytesDispatched: 60,
+     _pendingData: null,
+     _pendingEncoding: '',
+     parser: 
+      { '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        _headers: [],
+        _url: '',
+        socket: [Circular],
+        incoming: [Circular],
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncomingClient] },
+     _httpMessage: 
+      { domain: null,
+        _events: {},
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedHeader: {},
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _hangupClose: false,
+        _headerSent: true,
+        socket: [Circular],
+        connection: [Circular],
+        _header: 'GET / HTTP/1.1\r\nHost: www.example.com\r\nConnection: close\r\n\r\n',
+        _headers: [Object],
+        _headerNames: [Object],
+        agent: [Object],
+        socketPath: undefined,
+        method: 'GET',
+        path: '/',
+        parser: [Object],
+        res: [Circular] },
+     read: [Function],
+     _consuming: true },
+  connection: 
+   { _connecting: false,
+     _hadError: false,
+     _handle: 
+      { fd: 22,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _host: 'www.example.com',
+     _readableState: 
+      { objectMode: false,
+        highWaterMark: 16384,
+        buffer: [],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: false,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null,
+        resumeScheduled: false },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        free: [Function: onFree],
+        close: [Object],
+        agentRemove: [Function: onRemove],
+        drain: [Function: ondrain],
+        error: [Function: socketErrorListener],
+        data: [Function: socketOnData] },
+     _maxListeners: undefined,
+     _writableState: 
+      { objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false },
+     writable: true,
+     allowHalfOpen: false,
+     destroyed: false,
+     bytesRead: 1610,
+     _bytesDispatched: 60,
+     _pendingData: null,
+     _pendingEncoding: '',
+     parser: 
+      { '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        _headers: [],
+        _url: '',
+        socket: [Circular],
+        incoming: [Circular],
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncomingClient] },
+     _httpMessage: 
+      { domain: null,
+        _events: {},
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedHeader: {},
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _hangupClose: false,
+        _headerSent: true,
+        socket: [Circular],
+        connection: [Circular],
+        _header: 'GET / HTTP/1.1\r\nHost: www.example.com\r\nConnection: close\r\n\r\n',
+        _headers: [Object],
+        _headerNames: [Object],
+        agent: [Object],
+        socketPath: undefined,
+        method: 'GET',
+        path: '/',
+        parser: [Object],
+        res: [Circular] },
+     read: [Function],
+     _consuming: true },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: false,
+  headers: 
+   { 'accept-ranges': 'bytes',
+     'cache-control': 'max-age=604800',
+     'content-type': 'text/html',
+     date: 'Thu, 29 Oct 2015 18:38:25 GMT',
+     etag: '"359670651"',
+     expires: 'Thu, 05 Nov 2015 18:38:25 GMT',
+     'last-modified': 'Fri, 09 Aug 2013 23:54:35 GMT',
+     server: 'ECS (rhv/818F)',
+     'x-cache': 'HIT',
+     'x-ec-custom-error': '1',
+     'content-length': '1270',
+     connection: 'close' },
+  rawHeaders: 
+   [ 'Accept-Ranges',
+     'bytes',
+     'Cache-Control',
+     'max-age=604800',
+     'Content-Type',
+     'text/html',
+     'Date',
+     'Thu, 29 Oct 2015 18:38:25 GMT',
+     'Etag',
+     '"359670651"',
+     'Expires',
+     'Thu, 05 Nov 2015 18:38:25 GMT',
+     'Last-Modified',
+     'Fri, 09 Aug 2013 23:54:35 GMT',
+     'Server',
+     'ECS (rhv/818F)',
+     'X-Cache',
+     'HIT',
+     'x-ec-custom-error',
+     '1',
+     'Content-Length',
+     '1270',
+     'Connection',
+     'close' ],
+  trailers: {},
+  rawTrailers: [],
+  _pendings: [],
+  _pendingIndex: 0,
+  upgrade: false,
+  url: '',
+  method: null,
+  statusCode: 200,
+  statusMessage: 'OK',
+  client: 
+   { _connecting: false,
+     _hadError: false,
+     _handle: 
+      { fd: 22,
+        reading: true,
+        owner: [Circular],
+        onread: [Function: onread],
+        onconnection: null,
+        writeQueueSize: 0 },
+     _host: 'www.example.com',
+     _readableState: 
+      { objectMode: false,
+        highWaterMark: 16384,
+        buffer: [],
+        length: 0,
+        pipes: null,
+        pipesCount: 0,
+        flowing: true,
+        ended: false,
+        endEmitted: false,
+        reading: false,
+        sync: false,
+        needReadable: true,
+        emittedReadable: false,
+        readableListening: false,
+        defaultEncoding: 'utf8',
+        ranOut: false,
+        awaitDrain: 0,
+        readingMore: false,
+        decoder: null,
+        encoding: null,
+        resumeScheduled: false },
+     readable: true,
+     domain: null,
+     _events: 
+      { end: [Object],
+        finish: [Function: onSocketFinish],
+        _socketEnd: [Function: onSocketEnd],
+        free: [Function: onFree],
+        close: [Object],
+        agentRemove: [Function: onRemove],
+        drain: [Function: ondrain],
+        error: [Function: socketErrorListener],
+        data: [Function: socketOnData] },
+     _maxListeners: undefined,
+     _writableState: 
+      { objectMode: false,
+        highWaterMark: 16384,
+        needDrain: false,
+        ending: false,
+        ended: false,
+        finished: false,
+        decodeStrings: false,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: false,
+        errorEmitted: false },
+     writable: true,
+     allowHalfOpen: false,
+     destroyed: false,
+     bytesRead: 1610,
+     _bytesDispatched: 60,
+     _pendingData: null,
+     _pendingEncoding: '',
+     parser: 
+      { '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        _headers: [],
+        _url: '',
+        socket: [Circular],
+        incoming: [Circular],
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncomingClient] },
+     _httpMessage: 
+      { domain: null,
+        _events: {},
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedHeader: {},
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _hangupClose: false,
+        _headerSent: true,
+        socket: [Circular],
+        connection: [Circular],
+        _header: 'GET / HTTP/1.1\r\nHost: www.example.com\r\nConnection: close\r\n\r\n',
+        _headers: [Object],
+        _headerNames: [Object],
+        agent: [Object],
+        socketPath: undefined,
+        method: 'GET',
+        path: '/',
+        parser: [Object],
+        res: [Circular] },
+     read: [Function],
+     _consuming: true },
+  _consuming: false,
+  _dumped: false,
+  req: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedHeader: {},
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _hangupClose: false,
+     _headerSent: true,
+     socket: 
+      { _connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _host: 'www.example.com',
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: false,
+        destroyed: false,
+        bytesRead: 1610,
+        _bytesDispatched: 60,
+        _pendingData: null,
+        _pendingEncoding: '',
+        parser: [Object],
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true },
+     connection: 
+      { _connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _host: 'www.example.com',
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: false,
+        destroyed: false,
+        bytesRead: 1610,
+        _bytesDispatched: 60,
+        _pendingData: null,
+        _pendingEncoding: '',
+        parser: [Object],
+        _httpMessage: [Circular],
+        read: [Function],
+        _consuming: true },
+     _header: 'GET / HTTP/1.1\r\nHost: www.example.com\r\nConnection: close\r\n\r\n',
+     _headers: { host: 'www.example.com' },
+     _headerNames: { host: 'Host' },
+     agent: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256 },
+     socketPath: undefined,
+     method: 'GET',
+     path: '/',
+     parser: 
+      { '0': [Function: parserOnHeaders],
+        '1': [Function: parserOnHeadersComplete],
+        '2': [Function: parserOnBody],
+        '3': [Function: parserOnMessageComplete],
+        _headers: [],
+        _url: '',
+        socket: [Object],
+        incoming: [Circular],
+        maxHeaderPairs: 2000,
+        onIncoming: [Function: parserOnIncomingClient] },
+     res: [Circular] } } undefined
+      ✓ should download all pending urls in the list (43ms)
+
+
+  9 passing (140ms)
+
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (42ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      ✓ should download all pending urls in the list 
+
+
+  9 passing (116ms)
+
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (38ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      ✓ should download all pending urls in the list 
+
+
+  9 passing (118ms)
+
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (38ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+      1) should download all pending urls in the list
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      2) should download all pending urls in the list
+
+
+  8 passing (106ms)
+  2 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Cannot read property 'end' of undefined
+      at Object.exports.fetch (/Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:28:10)
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:65:19
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught TypeError: Cannot read property 'end' of undefined
+      at Object.exports.fetch (/Users/student/Desktop/2015-10-web-historian/workers/htmlfetcher.js:28:10)
+      at /Users/student/Desktop/2015-10-web-historian/helpers/archive-helpers.js:65:19
+      at FSReqWrap.oncomplete (fs.js:99:15)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (40ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+      1) should download all pending urls in the list
+      2) should download all pending urls in the list
+
+
+  8 passing (100ms)
+  2 failing
+
+  1) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: EISDIR, open '/Users/student/Desktop/2015-10-web-historian/workers'
+      at Error (native)
+
+  2) archive helpers #downloadUrls should download all pending urls in the list:
+     Uncaught Error: EISDIR, open '/Users/student/Desktop/2015-10-web-historian/workers'
+      at Error (native)
+
+
+
+npm ERR! Test failed.  See above for more details.
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                       ⏎ ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html (42ms)
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive (66ms)
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list (65ms)
+    #addUrlToList
+      ✓ should add a url to the list (48ms)
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      ✓ should download all pending urls in the list 
+
+
+  9 passing (327ms)
+
+~/D/2015-10-web-historian git:master ❯❯❯ npm test                                                         ✖ ✱
+
+> web-historian@1.0.1 test /Users/student/Desktop/2015-10-web-historian
+> mocha test
+
+child_process: customFds option is deprecated, use stdio instead.
+
+
+  server
+    GET /
+      ✓ should return the content of index.html 
+    archived websites
+      GET
+        ✓ should return the content of a website from the archive 
+        ✓ Should 404 when asked for a nonexistent file 
+      POST
+POSTING
+[Function] 'END'
+        ✓ should append submitted sites to 'sites.txt' 
+
+  archive helpers
+    #readListOfUrls
+      ✓ should read urls from sites.txt 
+    #isUrlInList
+      ✓ should check if a url is in the list 
+    #addUrlToList
+      ✓ should add a url to the list 
+    #isUrlArchived
+      ✓ should check if a url is archived 
+    #downloadUrls
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.example.com
+/Users/student/Desktop/2015-10-web-historian/test/testdata/siteswww.google.com
+      ✓ should download all pending urls in the list 
+
+
+  9 passing (124ms)
+
+~/D/2015-10-web-historian git:master ❯❯❯ git status                                                       ✖ ✱
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   helpers/archive-helpers.js
+	deleted:    web/archives/sites.txt
+	modified:   workers/htmlfetcher.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+~/D/2015-10-web-historian git:master ❯❯❯ git add --a                                                      ✖ ✱
+~/D/2015-10-web-historian git:master ❯❯❯ git commit                                                         ✚
+[master c9f64f6] Passes all specs.
+ 3 files changed, 34 insertions(+), 1 deletion(-)
+ delete mode 100644 web/archives/sites.txt
+~/D/2015-10-web-historian git:master ❯❯❯ git push jess master                                               ⬆
+Username for 'https://github.com': jeobrien
+Password for 'https://jeobrien@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.11 KiB | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+To https://github.com/jeobrien/2015-10-web-historian.git
+   4512525..c9f64f6  master -> master
+~/D/2015-10-web-historian git:master ❯❯❯ git push origin master                                             ⬆
+Username for 'https://github.com': gelsto
+Password for 'https://gelsto@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/gelsto/2015-10-web-historian.git/'
+~/D/2015-10-web-historian git:master ❯❯❯ git push origin master                                           ⏎ ⬆
+Username for 'https://github.com': gelsto
+Password for 'https://gelsto@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.11 KiB | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+To https://github.com/gelsto/2015-10-web-historian.git
+   4512525..c9f64f6  master -> master
+~/D/2015-10-web-historian git:master ❯❯❯ crontab -e
+crontab: no crontab for student - using an empty one
+
+  GNU nano 2.0.6                   File: /tmp/crontab.m4P8yso3IQ                                    Modified  
+
+*/01****/Users/student/Desktop/2015-10-web-historian/works/htmlfetcher.js -update -config=myconfig
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help       ^O WriteOut       ^R Read File      ^Y Prev Page      ^K Cut Text       ^C Cur Pos
+^X Exit           ^J Justify        ^W Where Is       ^V Next Page      ^U UnCut Text     ^T To Spell

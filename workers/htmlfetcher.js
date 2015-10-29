@@ -12,6 +12,7 @@ exports.paths = {
 exports.fetch = function(url) {
   console.log(archive.paths.archivedSites + url)
   var file = fs.createWriteStream(archive.paths.archivedSites + "/" + url);
+  console.log(__dirname)
   var request = http.get('http://' + url, function(response, err) {
     response.pipe(file);
     file.on('finish', function() {
@@ -19,8 +20,12 @@ exports.fetch = function(url) {
     })
   });
   request.end();
-  // request.setTimeout(function() {
-  //   request.abort();
-  // }, 15000);
-
 }
+
+exports.init = function() {
+  archive.getUrls();
+};
+
+// init();
+
+// exports.fetch();
