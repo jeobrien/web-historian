@@ -31,8 +31,20 @@ exports.collectData = function(req, res, callback) {
     data += chunk;
   });
   req.on('end', function() { 
-    callback(res, JSON.parse(data).url);
+    console.log(res.end, "END");
+    callback(JSON.parse(data).url, function(statusCode, data) {
+        res.writeHead(statusCode);
+        if (data) {
+          res.end(data);
+        } else {
+          res.end();          
+        }
+      // })
+    });
   });
+  res.on('close', function() {
+    console.log("closed");
+  })
 }
  
 // As you progress, keep thinking about what helper functions you can put here!

@@ -82,7 +82,7 @@ describe("archive helpers", function(){
       var urlArray = ["example1.com", "example2.com"];
       fs.writeFileSync(archive.paths.list, urlArray.join("\n"));
 
-      archive.readListOfUrls(function(err, urls){
+      archive.readListOfUrls(function(urls){
         expect(urls).to.deep.equal(urlArray);
         done();
       });

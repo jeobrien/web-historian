@@ -6,7 +6,6 @@ var url = require('url');
 var actions = {
   "GET" : helpers.serveAssets,
 }
-// require more modules/folders here!
 
 exports.handleRequest = function (req, res) {
   var action = actions[req.method];
@@ -17,9 +16,19 @@ exports.handleRequest = function (req, res) {
     }
   }
   else if (req.method === "GET") {
-    archive.isUrlArchived(res, req.url);
+    archive.isUrlArchived(req.url, function (statusCode, data) {
+        res.writeHead(statusCode);
+        if (data) {
+          res.end(data);
+        } else {
+          res.end();          
+        }
+      // })
+    });
+
   }
   if (req.method === "POST") {
+    console.log("POSTING")
     helpers.collectData(req, res, archive.isUrlInList);
   }
 
